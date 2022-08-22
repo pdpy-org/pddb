@@ -28,7 +28,7 @@ with pdpy.PdPy(name="all_internals", root=True) as f:
     internal = internal.replace("_new", "")
     
     if "g_array" in internal:
-      f.createArray(pdpy.GOPArray())
+      f.createGOPArray()
       continue
     
     internal = internal.replace("g_","").replace("x_","").replace("m_","")
