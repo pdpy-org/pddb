@@ -6,7 +6,7 @@
 # **************************************************************************** #
 """ Output a list of all Pure Data internals """
 import pddb
-import pdpy
+import pdpy_lib as pdpy
 
 db = pddb.PDDB(dbname="../pddb.json", listen=False)
 
